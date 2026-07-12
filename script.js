@@ -38,6 +38,8 @@ let job = [
 
 function jobCard() {
   jobContainer.innerHTML = " ";
+  document.querySelector("#job-count").innerHTML =
+    "<span>" + job.length + "</span> Vacancies";
 
   job.forEach(function (job) {
     jobContainer.innerHTML += `

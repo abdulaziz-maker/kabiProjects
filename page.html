@@ -11,33 +11,53 @@
     <header class="top-header">
       <img class="kabi" src="images.png" alt="KABi logo" />
       <div class="top-buttons">
-        <select class="select-language">
-          <option value="ar">العربية</option>
-          <option value="en">en</option>
-        </select>
-        <div class="user-name">name</div>
+        <button type="button" class="lang-btn">العربية</button>
+        <button type="button" class="round-btn">🔔</button>
+        <button type="button" class="round-btn">?</button>
+        <span class="avatar">👤</span>
+        <div class="user-name">
+          <span>Admin Admin Admin</span>
+          <small>Super Admin</small>
+        </div>
+        <span>⌄</span>
       </div>
     </header>
     <div class="main">
+      <aside class="icon-nav">
+        <span>◎</span>
+        <span class="icon-active">💼</span>
+        <span>📁</span>
+        <span>🏢</span>
+        <span>👤</span>
+        <span>🎓</span>
+        <span>📋</span>
+        <span class="icon-bottom">⚙</span>
+      </aside>
       <aside class="nav">
         <nav>
-          <a href="html flodres/b.html">Budgeted</a>
-          <a href="html flodres/j.html">Job requisitions</a>
-          <a href="#published-job" class="active">Published job</a>
-          <a href="html flodres/c.html">courses</a>
-          <a href="html flodres/i.html">interviews</a>
-          <a href="html flodres/sp.html">shared profile</a>
-          <a href="html flodres/so.html">shared offers</a>
-          <a href="html flodres/sa.html">shared application</a>
+          <a href="html-folders/budgeted.html">Budgeted Vacancies</a>
+          <a href="html-folders/job-requisitions.html">Job Requisitions</a>
+          <a href="#published-job" class="active">Published Jobs</a>
+          <a href="html-folders/courses.html">Courses</a>
+          <a href="html-folders/interviews.html">Interviews</a>
+          <a href="html-folders/shared-profiles.html">Shared Profiles</a>
+          <a href="html-folders/shared-offers.html">Shared Offers</a>
+          <a href="html-folders/shared-applicants.html">Shared Applicants</a>
         </nav>
       </aside>
       <section id="published-job" class="published-job">
         <!-- تم وضع اي دي وكلاس ،حتى يستطيع الوصول اليه رابط التنقل ، وحتى يتم تكرار في سكربت-->
         <aside class="search-button">
-          <input type="search" placeholder="Search" />
-          <button type="button">Search</button>
+          <div class="search-box">
+            <input type="search" placeholder="Search" />
+            <span>ⓘ</span>
+          </div>
+          <button type="button" class="search-icon-btn">Search</button>
+          <button type="button" class="refresh-btn">↻</button>
+          <button type="button" class="filter-btn">▽ Filter</button>
+          <button type="button" class="add-job-btn" onclick="addJob()">+</button>
         </aside>
-        <button type="button" onclick="addJob()">Add job</button>
+        <p id="job-count"></p>
         <section id="job-container"></section>
       </section>
     </div>
