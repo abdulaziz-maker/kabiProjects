@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KABI Jobs</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="top-header">
+      <img class="kabi" src="images.png" alt="KABi logo" />
+      <div class="top-buttons">
+        <select class="select-language">
+          <option value="ar">العربية</option>
+          <option value="en">en</option>
+        </select>
+        <div class="user-name">name</div>
+      </div>
+    </header>
+    <div class="main">
+      <aside class="nav">
+        <nav>
+          <a href="html flodres/b.html">Budgeted</a>
+          <a href="html flodres/j.html">Job requisitions</a>
+          <a href="#published-job" class="active">Published job</a>
+          <a href="html flodres/c.html">courses</a>
+          <a href="html flodres/i.html">interviews</a>
+          <a href="html flodres/sp.html">shared profile</a>
+          <a href="html flodres/so.html">shared offers</a>
+          <a href="html flodres/sa.html">shared application</a>
+        </nav>
+      </aside>
+      <section id="published-job" class="published-job">
+        <!-- تم وضع اي دي وكلاس ،حتى يستطيع الوصول اليه رابط التنقل ، وحتى يتم تكرار في سكربت-->
+        <aside class="search-button">
+          <input type="search" placeholder="Search" />
+          <button type="button">Search</button>
+        </aside>
+        <button type="button" onclick="addJob()">Add job</button>
+        <section id="job-container"></section>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

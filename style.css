@@ -1,0 +1,275 @@
+body {
+  background-color: rgb(193, 188, 188);
+  overflow-x: scroll;
+  margin: 0;
+  width: 100%;
+}
+
+.top-header {
+  background-color: rgb(229, 223, 223);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kabi {
+  height: 60px;
+  width: auto;
+}
+
+.top-buttons {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.select-language {
+  width: auto;
+  height: 30px;
+  margin: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+  margin: 20px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  /* grid-template-columns: 200px minmax(0, 1fr); */
+}
+
+.published-job {
+  min-width: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 5px solid rgb(220, 217, 212);
+  margin: 10px;
+}
+
+nav a {
+  min-height: 70px;
+  padding: 10px;
+  border: 0.5px solid rgb(195, 194, 194);
+  display: flex;
+  align-items: flex-start;
+  color: #524949;
+  background-color: #f5efef;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.nav a:active,
+.nav a:hover {
+  background-color: #5a5200;
+  color: white;
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 20px;
+}
+
+.search-button input {
+  flex: 1;
+  min-width: 0;
+  max-width: 440px;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 15px;
+  outline: none;
+}
+
+.search-button button {
+  height: 40px;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+#job-container {
+  width: 100%;
+}
+
+.job-card {
+  width: 100%;
+  margin: 10px 0;
+  padding: 20px;
+  border: 10px solid rgb(227, 222, 222);
+  background-color: rgb(249, 247, 243);
+  color: black;
+}
+
+.job-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid black;
+}
+
+.job-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.job-title span {
+  padding: 5px;
+  background-color: rgb(231, 233, 233);
+  color: #918d8d;
+  font-size: 17px;
+}
+
+.job-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.job-action button {
+  width: auto;
+  height: auto;
+  border: 1px solid rgb(196, 189, 189);
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.main-card {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(0, 3fr);
+}
+
+.job-info {
+  padding: 10px;
+  border: 1px solid rgb(205, 197, 197);
+}
+
+.job-inside {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) minmax(0, 2fr);
+}
+
+.vacancies-stats {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid rgb(205, 197, 197);
+}
+
+.job-status {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid rgb(205, 197, 197);
+}
+
+.right-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.job-details {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: rgb(239, 236, 229);
+}
+
+.admin {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(220, 185, 144);
+  color: black;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .top-header {
+    padding: 5px;
+  }
+
+  .kabi {
+    height: 45px;
+  }
+
+  .top-buttons {
+    gap: 8px;
+  }
+
+  .select-language,
+  .user-name {
+    margin: 5px;
+  }
+
+  .main {
+    grid-template-columns: 160px 2fr;
+  }
+
+  nav {
+    flex-direction: column;
+    overflow-x: auto;
+    margin: 5px;
+  }
+
+  nav a {
+    min-width: 130px;
+    min-height: auto;
+    padding: 12px;
+    white-space: nowrap;
+  }
+
+  .search-button {
+    margin: 10px;
+  }
+
+  .search-button input {
+    max-width: none;
+  }
+
+  .job-card {
+    padding: 12px;
+    border-width: 5px;
+  }
+
+  .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .main-card {
+    grid-template-columns: 1fr;
+  }
+
+  .job-inside {
+    grid-template-columns: 1fr;
+  }
+
+  .right-info {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
