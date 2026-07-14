@@ -174,18 +174,15 @@ function jobCard() {
 }
 
 function pinJob(id) {
-  // ندور على الوظيفة اللي ضغطنا على زر Pin حقها
   for (let i = 0; i < job.length; i++) {
-    // لقينا الوظيفة الصح (نفس id)
     if (job[i].id === id) {
-      let pinJob = job[i]; // نحفظها بمتغير
-      job.splice(i, 1); // نشيلها من مكانها القديم
-      job.unshift(pinJob); // نحطها أول شي بالمصفوفة
-      // خلاص لقيناها، ما نكمل الدوران
+      let pinJob = job[i];
+      job.splice(i, 1);
+      job.unshift(pinJob);
     }
   }
 
-  jobCard(); // نعيد رسم البطاقات بالترتيب الجديد
+  jobCard();
 }
 
 function deleteJob() {

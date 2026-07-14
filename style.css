@@ -3,7 +3,7 @@ body {
   overflow-x: auto;
   margin: 0;
   width: 100%;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
 .top-header {
@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:  0 20px 0 0 ;
+  padding: 0 20px 0 0;
 }
 
 .kabi {
@@ -29,12 +29,12 @@ body {
 
 .lang-btn {
   height: 33px;
-  padding: 0 8px;
+  padding: 1px 11px;
   border: 1px solid #c9c7c7;
   border-radius: 6px;
   background-color: white;
   color: #222;
-  font-size: 13px;
+  font-size: 16px;
   font-family: Tahoma, Arial, sans-serif;
   cursor: pointer;
 }
@@ -88,7 +88,7 @@ body {
   text-align: right;
 }
 
-.user-name span:first-child {
+.user-name-title {
   font-weight: 700;
   font-size: 14px;
   color: #222;
@@ -98,7 +98,7 @@ body {
   text-overflow: ellipsis;
 }
 
-.user-name span:last-child {
+.user-name-role {
   font-size: 12px;
   color: gray;
 }
@@ -106,7 +106,6 @@ body {
 .main {
   display: grid;
   grid-template-columns: 70px 290px 1fr;
-  /* grid-template-columns: 200px minmax(0, 1fr); */
 }
 
 .published-job {
@@ -125,12 +124,12 @@ body {
   font-size: 20px;
   position: sticky;
   top: 61px;
-  height: calc(100vh - 61px);
+  height: 100%;
 }
 
 .icon-nav span {
-  width: 40px;
-  height: 40px;
+  width: 55px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,15 +139,14 @@ body {
 }
 
 .icon-nav .icon-active {
-  background-color: #e6dfc9;
+  background-color: #c3b995;
   opacity: 1;
 }
-
 
 .nav {
   position: sticky;
   top: 61px;
-  height: calc(100vh - 61px);
+  height: 100%;
   margin-left: 15px;
   padding-top: 12px;
 }
@@ -295,6 +293,7 @@ nav a {
 
 #job-container {
   width: 100%;
+  padding-bottom: 79px;
 }
 
 .job-card {
@@ -481,10 +480,10 @@ nav a {
   margin: 0 0 16px 0;
   padding: 16px;
   border-radius: 8px;
-  background: linear-gradient(90deg, #eeede7 0%, #ffffff 100%);
+  background: linear-gradient(90deg, #eeede7, #fff);
 }
 
-.vacancies-stats .job-details:last-child {
+.stat-last {
   margin-bottom: 0;
 }
 
@@ -492,26 +491,26 @@ nav a {
   margin: 0;
 }
 
-.right-info .job-details:nth-child(2) {
-  background: #1697f4;
-}
-
-.right-info .job-details:nth-child(2) p:first-child,
-.right-info .job-details:nth-child(2) p:last-child {
-  color: white;
-}
-
-.job-details p:first-child {
+.stat-number {
   font-weight: 700;
   font-size: 16px;
   margin: 0;
   color: #333;
 }
 
-.job-details p:last-child {
+.stat-label {
   color: #7c8b94;
   font-size: 14px;
   margin: 6px 0 0 0;
+}
+
+.stat-highlight {
+  background: #1697f4;
+}
+
+.stat-highlight .stat-number,
+.stat-highlight .stat-label {
+  color: white;
 }
 
 .admin {
@@ -530,10 +529,6 @@ nav a {
 .recruiter {
   background-color: #f0efea;
   font-weight: normal;
-}
-
-#job-container {
-  padding-bottom: 79px;
 }
 
 .pagination {
@@ -604,6 +599,11 @@ nav a {
 
   .icon-nav {
     padding-top: 15px;
+    height: 751px;
+  }
+
+  .nav {
+    height: 751px;
   }
 
   nav a {
