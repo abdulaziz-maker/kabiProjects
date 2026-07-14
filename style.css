@@ -53,6 +53,31 @@ body {
   cursor: pointer;
 }
 
+.icon-btn i,
+.avatar i,
+.icon-nav span i,
+.search-box span i {
+  font-size: 22px;
+  color: currentColor;
+}
+
+.chevron i {
+  font-size: 18px;
+  color: currentColor;
+}
+
+.search-icon-btn i,
+.refresh-btn i,
+.filter-btn i {
+  font-size: 16px;
+  color: currentColor;
+}
+
+.job-icon-btn i {
+  font-size: 16px;
+  color: currentColor;
+}
+
 .notif-dot {
   position: absolute;
   top: 6px;
